@@ -4,10 +4,13 @@
       *ngFor="let coordinate of coordinates; let i = index"
       [attr.id]="coordinate.id"
       [attr.d]="coordinate.d"
-      [attr.fill]="fillRegionColor"
-      [attr.stroke]="strokeColor"
+      
       (click)="onCzMapClick(coordinate.id)"
     ></path>
 
   </g>
 </svg>
+
+<!--  
+      [attr.fill]="fillRegionColor"       
+      [attr.stroke]="strokeColor" -->

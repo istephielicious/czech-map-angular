@@ -8,9 +8,9 @@ import { CzechMapService } from './czech-map.service';
 })
 export class CzechMapComponent implements OnInit {
   coordinates: object;
-  @Input() fillColor: string = "#FFFFFF";
-  @Input() fillRegionColor: string = "#FF9900";
-  @Input() strokeColor: string = "#000000";
+  // @Input() fillColor: string = "#FFFFFF";
+  // @Input() fillRegionColor: string = "#FF9900";
+  // @Input() strokeColor: string = "#000000";
   @Output('onMapClick') click = new EventEmitter();
 
   constructor(private czMapService: CzechMapService) { }
