@@ -19,8 +19,8 @@ export class CzechMapComponent implements OnInit {
     this.czMapService.getCzMapCoordinates().then(data=> this.coordinates = data);
   }
   
-  onCzechMapClick(region) {
-    // this.click.emit({""})
+  onCzMapClick(region) {
+   this.click.emit({"region": region})
   }
 
 }

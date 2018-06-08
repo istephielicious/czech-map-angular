@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Radio Map';
 
-  czMapClicl($event) {
+  czMapClick($event) {
     console.log($event);
   }
 }
