@@ -7,7 +7,7 @@ import { CzechMapModule } from './czech-map/czech-map.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
