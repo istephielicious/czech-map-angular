@@ -1,15 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -50 1000 400">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -30 1000 400">
   <g>
     <path
       *ngFor="let coordinate of coordinates; let i = index"
       [attr.id]="coordinate.id"
       [attr.d]="coordinate.d"
       
-      (click)="onCzMapClick(coordinate.id)"
+      (click)="onCzMapClick(coordinate.title)"
     ></path>
 
   </g>
 </svg>
+<div *ngIf="region">
+  <alert type="info">{{region}}</alert>
+</div>
 
 <!--  
       [attr.fill]="fillRegionColor"       

@@ -8,6 +8,7 @@ import { CzechMapService } from './czech-map.service';
 })
 export class CzechMapComponent implements OnInit {
   coordinates: object;
+  private region: string;
   // @Input() fillColor: string = "#FFFFFF";
   // @Input() fillRegionColor: string = "#FF9900";
   // @Input() strokeColor: string = "#000000";
@@ -20,7 +21,8 @@ export class CzechMapComponent implements OnInit {
   }
   
   onCzMapClick(region) {
-   this.click.emit({"region": region})
+    this.click.emit({"region": region});
+    this.region = region;
   }
 
 }

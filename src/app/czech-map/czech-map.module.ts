@@ -4,9 +4,12 @@ import { CommonModule } from '@angular/common';
 import { CzechMapService } from './czech-map.service';
 import { CzechMapComponent } from './czech-map.component';
 
+import { AlertModule } from 'ngx-bootstrap'
+
 @NgModule({
   imports: [
-    CommonModule
+    AlertModule.forRoot(),
+    CommonModule,
   ],
   declarations: [CzechMapComponent],
   providers: [CzechMapService],

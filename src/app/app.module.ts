@@ -5,11 +5,14 @@ import { AppComponent } from './app.component';
 
 import { CzechMapModule } from './czech-map/czech-map.module';
 
+import { AlertModule } from 'ngx-bootstrap'
+
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
+    AlertModule.forRoot(),
     BrowserModule,
     CzechMapModule
   ],
