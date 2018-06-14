@@ -1,3 +1,4 @@
+import { Position } from './radio-settings/radio-settings.component';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Radio Map';
-
+  position = {x: 900, y: 260, color:'deepPink'};
   czMapClick($event) {
     console.log($event);
   }
