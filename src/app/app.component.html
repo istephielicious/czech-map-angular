@@ -1,5 +1,8 @@
 <div>
     <app-czech-map (onMapClick)="czMapClick($event)"></app-czech-map>
 
-    <radio-settings [position]=position></radio-settings>
+    
+    <div *ngFor="let position of Positions">
+        <radio-settings [position]=position></radio-settings>
+    </div>
 </div>

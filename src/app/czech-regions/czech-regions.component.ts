@@ -8,13 +8,13 @@ import { CzechRegionsService } from './czech-regions.service';
 })
 export class CzechRegionsComponent implements OnInit {
   region_label: object;
+  // tslint:disable-next-line:no-output-rename
   @Output('onMapLblClick') click = new EventEmitter();
 
   constructor(private mapLabelService: CzechRegionsService) { }
-  
 
   ngOnInit() {
-    this.mapLabelService.getMaplabels().then(data=> this.region_label = data);    
+    this.mapLabelService.getMaplabels().then(data => this.region_label = data);
   }
 
 }

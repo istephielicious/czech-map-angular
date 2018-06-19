@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'radio-settings',
   templateUrl: './radio-settings.component.html',
   styleUrls: ['./radio-settings.component.css']

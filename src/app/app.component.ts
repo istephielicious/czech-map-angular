@@ -8,7 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Radio Map';
-  position = {x: 900, y: 260, color:'deepPink'};
+  Positions = [
+    {x: 900, y: 260, color: 'SeaGreen'},
+    {x: 500, y: 260, color: 'RoyalBlue'},
+    {x: 750, y: 400, color: 'Tomato'},
+    {x: 900, y: 300, color: 'Violet'},
+    {x: 900, y: 260, color: 'PaleVioletRed'}
+  ];
   czMapClick($event) {
     console.log($event);
   }
